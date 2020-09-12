@@ -11,9 +11,7 @@ port = ':9092'
 boot_strap = boot + port
 print(boot_strap)
 
-#producer = KafkaProducer(bootstrap_servers=['b-2.mskworkshopcluster.k2a9xo.c2.kafka.us-west-2.amazonaws.com'],
-producer = KafkaProducer(bootstrap_servers=boot_strap, \
-value_serializer=lambda x: dumps(x).encode('utf-8'))
+producer = KafkaProducer(bootstrap_servers=boot_strap, value_serializer=lambda x: dumps(x).encode('utf-8'))
 
 for e in range(10000):
     data = {'number' : e}
