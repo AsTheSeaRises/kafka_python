@@ -4,8 +4,8 @@ from kafka import KafkaProducer
 import sys
 import os
 
-
-bootstrap_tmp = print(os.environ.get(bootstrap))
+print(os.environ)
+bootstrap_tmp = (os.environ.get('bootstrap'))
 boot = str(bootstrap_tmp)
 port = ':9092'
 boot_strap = boot + port
