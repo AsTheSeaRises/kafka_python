@@ -9,6 +9,8 @@ This repository provides links to a container, along with a basic Python script 
 The container has the python script, required kafka-python libraries and the per-account variables (bootstrap servers and topic name). The container can be launched into the MSK VPC, and associated subnet easily using AWS Fargate.
 
 # Read and Write Messages using Kafka CLI Utility
+You can follow these steps after the [Amazon MSK Labs > Cluster Creation Lab] (https://amazonmsk-labs.workshop.aws/en/clustercreation/console.html#and-off-we-go) section is complete.
+
 If you followed the service creation steps outlined in the lab workshop, you would have a Cloud9 instance created in your account, which is also in the VPC that connects to the MSK service via ENI's in the relevant subnets.
 
 Connect to the Cloud9 instance (called MSKClient-Cloud9EC2Bastion) and open two terminal tabs. One will be for the producer sending the messages, and the other will be for the consumer reading these messages sent to the topic. On the first tab, ssh to the instance created by CloudFormation named 'MSKClient-KafkaClientInstance1' or similar.
