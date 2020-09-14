@@ -20,10 +20,10 @@ Connect to the Cloud9 instance (called MSKClient-Cloud9EC2Bastion) and open two 
 Once connected to the instance via ssh, type the following command to begin a 'real-time' channel to send messages to a topic.
 Run this from the directory named after your kafka deployemnt. I used used Kafka 2.3.1, so this is the 'kafka231' directory.
 
-```bin/kafka-console-producer --topic example-topic --broker-list broker:9092```
+```bin/kafka-console-producer.sh --topic <Your Topic Name> --broker-list <Your Bootstrap Server FQDN:90902>```
 
 ### The consumer
-bin/kafka-console-consumer.sh --topic <Your Topic Name> --bootstrap-server <Your Bootstrap Server FQDN:90902>
+```bin/kafka-console-consumer.sh --topic <Your Topic Name> --bootstrap-server <Your Bootstrap Server FQDN:90902>```
 
 # Option 2
 ## Read and Write Messages with Python using AWS Fargate
