@@ -25,7 +25,7 @@ Run this from the directory named after your kafka deployemnt. I used used Kafka
 ### The consumer
 bin/kafka-console-consumer.sh --topic <Your Topic Name> --bootstrap-server <Your Bootstrap Server FQDN:90902>
 
-Option 2
+# Option 2
 ## Read and Write Messages with Python using AWS Fargate
 1) Launch MSK (kafka) cluster using the console or CLI (ref:)
 2) 
