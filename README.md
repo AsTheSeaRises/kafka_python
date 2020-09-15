@@ -18,7 +18,7 @@ Connect to the Cloud9 instance (called MSKClient-Cloud9EC2Bastion) and open two 
 
 ### The producer
 Once connected to the instance via ssh, type the following command to begin a 'real-time' channel to send messages to a topic.
-Run this from the directory named after your kafka deployemnt. I used used Kafka 2.3.1, so this is the 'kafka231' directory.
+Run this from the directory named after your kafka deployemnt. I used used Kafka 2.3.1, so this is the 'kafka231' directory. Bootstrap information for you cluster can be [found](https://docs.aws.amazon.com/msk/latest/developerguide/msk-get-bootstrap-brokers.html) from the AWS console, or via API call.
 
 ```bin/kafka-console-producer.sh --topic <Your Topic Name> --broker-list <Your Bootstrap Server FQDN:90902>```
 
