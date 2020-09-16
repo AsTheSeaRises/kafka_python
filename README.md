@@ -35,7 +35,10 @@ From the Cloud9 terminal tab, navigate to the appropriate kafka directory linked
 
 # Option 2
 ## Read and Write Messages with Python using AWS Fargate
-Step 1) Create AWS MSK following the CloudFormation or CLI as noted in the [Workshop guide](https://amazonmsk-labs.workshop.aws/en/)
+
+## Step 1) 
+### Create AWS MSK 
+Following the CloudFormation or CLI as noted in the [Workshop guide](https://amazonmsk-labs.workshop.aws/en/)
 
 ## Step 2) 
 ### Create ECS [cluster](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/clusters.html) for the container that will run the kafka-python producer code.
@@ -46,6 +49,40 @@ Step 1) Create AWS MSK following the CloudFormation or CLI as noted in the [Work
 ![3](https://github.com/AsTheSeaRises/kafka_python/blob/master/images/1b.png  "Step 3")
 
 ## Step 4) 
-### Select ECS cluster networking configuration and name
+### Select ECS cluster networking configuration and name, then create
 ![4](https://github.com/AsTheSeaRises/kafka_python/blob/master/images/2a.png  "Step 4")
+
+## Step 5
+### Create container definition
+![5](https://github.com/AsTheSeaRises/kafka_python/blob/master/images/3.png  "Step 5")
+
+## Step 6
+### Select AWS Fargate as 'launch type'
+![6](https://github.com/AsTheSeaRises/kafka_python/blob/master/images/4.png  "Step 6")
+
+## Step 7
+### Next we will configure the container details
+![7](https://github.com/AsTheSeaRises/kafka_python/blob/master/images/5.png  "Step 7")
+Give your task a name, and select the 'ecsTaskExecutionRole' role.
+
+## Step 8
+### Configure the container image, script and environment variable for your MSK cluster
+![8](https://github.com/AsTheSeaRises/kafka_python/blob/master/images/6.png  "Step 8")
+Allocate 1Gb of memory and 0.5 CPU - then select 'Add Container'
+
+## Step 9
+### Next we will configure the container details
+![9](https://github.com/AsTheSeaRises/kafka_python/blob/master/images/7.png  "Step 9")
+Note: the image container path being pointed to on DockerHub. This could also be hosted on ECR or other container registries.
+
+## Step 10
+### Set Environment Variable 
+![10](https://github.com/AsTheSeaRises/kafka_python/blob/master/images/8.png  "Step 10")
+
+We set the environement vartiable for the container we will be lauching with AWS Fargate. The reason for this is to customise the
+'bootstrap' variable to point to required endpoint name for your MSK cluster.
+Enter the first boostrap server endpoint name here, which can be found on the AWS console.
+
+### Bootstrap format
+xxx.kafka.us-west-2.amazonaws.com:9092
 
