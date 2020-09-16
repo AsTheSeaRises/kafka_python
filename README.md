@@ -6,7 +6,7 @@ The purpose of this is to show both a producer and consumer using Python, and to
 
 This repository provides links to a container, along with a basic Python script which acts as a 'producer' which generates 10000 messages to a kafka topic. The kafka cluster and brokers hosting the topic are created during the inital MSK workshop steps using either the AWS CLI or the AWS Console.
 
-Output from Kafka-Python container
+### Output from Kafka-Python container
 ![0](https://github.com/AsTheSeaRises/kafka_python/blob/master/images/10.png  "Output from producer")
 
 The container has the python script, required kafka-python libraries and the per-account variables (bootstrap servers and topic name). The container can be launched into the MSK VPC, and associated subnet easily using AWS Fargate.
