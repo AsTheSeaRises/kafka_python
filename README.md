@@ -52,30 +52,30 @@ Following the CloudFormation or CLI as noted in the [Workshop guide](https://ama
 ### Select ECS cluster networking configuration and name, then create
 ![4](https://github.com/AsTheSeaRises/kafka_python/blob/master/images/2a.png  "Step 4")
 
-## Step 5
+## Step 5)
 ### Create container definition
 ![5](https://github.com/AsTheSeaRises/kafka_python/blob/master/images/3.png  "Step 5")
 
-## Step 6
+## Step 6)
 ### Select AWS Fargate as 'launch type'
 ![6](https://github.com/AsTheSeaRises/kafka_python/blob/master/images/4.png  "Step 6")
 
-## Step 7
+## Step 7)
 ### Next we will configure the container details
 ![7](https://github.com/AsTheSeaRises/kafka_python/blob/master/images/5.png  "Step 7")
 Give your task a name, and select the 'ecsTaskExecutionRole' role.
 
-## Step 8
+## Step 8)
 ### Configure the container image, script and environment variable for your MSK cluster
 ![8](https://github.com/AsTheSeaRises/kafka_python/blob/master/images/6.png  "Step 8")
 Allocate 1Gb of memory and 0.5 CPU - then select 'Add Container'
 
-## Step 9
+## Step 9)
 ### Next we will configure the container details
 ![9](https://github.com/AsTheSeaRises/kafka_python/blob/master/images/7.png  "Step 9")
 Note: the image container path being pointed to on DockerHub. This could also be hosted on ECR or other container registries.
 
-## Step 10
+## Step 10)
 ### Set Environment Variable 
 ![10](https://github.com/AsTheSeaRises/kafka_python/blob/master/images/8.png  "Step 10")
 
