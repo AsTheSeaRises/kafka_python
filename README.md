@@ -92,3 +92,6 @@ Enter the first [boostrap server endpoint](https://docs.aws.amazon.com/msk/lates
 ### Bootstrap format for Plaintext
 xxx.kafka.us-west-2.amazonaws.com:9092
 
+## Run task in your MSK VPC and public subnet.
+
+* Once the container is launched using AWS Fargate, you will see messages appear in the consumer window terminal window. This consumer session was created from Cloud9 intance to the MSK Client in your VPC.
