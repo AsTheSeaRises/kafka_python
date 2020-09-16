@@ -68,19 +68,22 @@ Give your task a name, and select the 'ecsTaskExecutionRole' role.
 ## Step 8)
 ### Configure the container image, script and environment variable for your MSK cluster
 ![8](https://github.com/AsTheSeaRises/kafka_python/blob/master/images/6.png  "Step 8")
-Allocate 1Gb of memory and 0.5 CPU - then select 'Add Container'
+
+* Allocate 1Gb of memory and 0.5 CPU - then select 'Add Container'
 
 ## Step 9)
 ### Next we will configure the container details
 ![9](https://github.com/AsTheSeaRises/kafka_python/blob/master/images/7.png  "Step 9")
-Note: the image container path being pointed to on DockerHub. This could also be hosted on ECR or other container registries.
+
+* Note: the image container path being pointed to on DockerHub. This could also be hosted on ECR or other container registries.
 
 ## Step 10)
 ### Set Environment Variable 
 ![10](https://github.com/AsTheSeaRises/kafka_python/blob/master/images/8.png  "Step 10")
 
-We set the environement vartiable for the container we will be lauching with AWS Fargate. The reason for this is to customise the
-'bootstrap' variable to point to required endpoint name for your MSK cluster.
+### Environment Variable
+We set the environment variable for the container we will be lauching with AWS Fargate. The reason for this is to customise the
+'bootstrap' variable to point to relevant endpoint name for your MSK cluster.
 Enter the first boostrap server endpoint name here, which can be found on the AWS console.
 
 ### Bootstrap format
