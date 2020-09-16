@@ -38,5 +38,11 @@ From the Cloud9 terminal tab, navigate to the appropriate kafka directory linked
 Step 1) Create AWS MSK following the CloudFormation or CLI as noted in the [Workshop guide](https://amazonmsk-labs.workshop.aws/en/)
 
 Step 2) Create ECS [cluster](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/clusters.html) for the container that will run the kafka-python producer code.
-![1](https://github.com/AsTheSeaRises/kafka_python/blob/master/images/1a.png  "Step 1")
+![2](https://github.com/AsTheSeaRises/kafka_python/blob/master/images/1a.png  "Step 2")
+
+Step 3) Select ECS cluster settings
+![3](https://github.com/AsTheSeaRises/kafka_python/blob/master/images/1b.png  "Step 3")
+
+Step 4) Select ECS cluster networking configuration and name
+![4](https://github.com/AsTheSeaRises/kafka_python/blob/master/images/2a.png  "Step 4")
 
