@@ -84,8 +84,8 @@ Give your task a name, and select the 'ecsTaskExecutionRole' role.
 ### Environment Variable
 We set the environment variable for the container we will be lauching with AWS Fargate. The reason for this is to customise the
 'bootstrap' variable to point to relevant endpoint name for your MSK cluster.
-Enter the first boostrap server endpoint name here, which can be found on the AWS console.
+Enter the first [boostrap server endpoint](https://docs.aws.amazon.com/msk/latest/developerguide/msk-get-bootstrap-brokers.html) name here, which can be found from the AWS console.
 
-### Bootstrap format
+### Bootstrap format for Plaintext
 xxx.kafka.us-west-2.amazonaws.com:9092
 
