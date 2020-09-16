@@ -35,5 +35,8 @@ From the Cloud9 terminal tab, navigate to the appropriate kafka directory linked
 
 # Option 2
 ## Read and Write Messages with Python using AWS Fargate
-1) Create AWS MSK following the CloudFormation or CLI as noted in the [Workshop guide](https://amazonmsk-labs.workshop.aws/en/)
-2) 
+Step 1) Create AWS MSK following the CloudFormation or CLI as noted in the [Workshop guide](https://amazonmsk-labs.workshop.aws/en/)
+
+Step 2) Create ECS [cluster](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/clusters.html) for the container that will run the kafka-python producer code.
+![1](https://github.com/asthesearises/kafka_python/images/1a.png  "Step 1"
+
