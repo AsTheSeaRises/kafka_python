@@ -25,14 +25,14 @@ Its best to open a terminal tab from within the Cloud9 IDE for your producer, an
 
 Run this from the directory named after your kafka deployemnt. I used used Kafka 2.3.1, so this is the 'kafka231' directory. Bootstrap information for you cluster can be [found](https://docs.aws.amazon.com/msk/latest/developerguide/msk-get-bootstrap-brokers.html) from the AWS console, or via API call.
 
-```bin/kafka-console-producer.sh --topic <Your Topic Name> --broker-list <Your Bootstrap Server FQDN:90902>```
+```bin/kafka-console-producer.sh --topic <Your Topic Name> --broker-list <Your Bootstrap Server FQDN:9092>```
 
 This will open an interactive terminal that allows you to type characters to the topic noted above.
 
 ### The consumer
 From the Cloud9 terminal tab, navigate to the appropriate kafka directory linked to your release version (directory 'kafka231' in my case) run the following code to read the messages from the producer terminal opened above..
 
-```bin/kafka-console-consumer.sh --topic <Your Topic Name> --bootstrap-server <Your Bootstrap Server FQDN:90902>```
+```bin/kafka-console-consumer.sh --topic <Your Topic Name> --bootstrap-server <Your Bootstrap Server FQDN:9092>```
 
 
 
@@ -90,7 +90,7 @@ We set the environment variable for the container we will be lauching with AWS F
 Enter the first [boostrap server endpoint](https://docs.aws.amazon.com/msk/latest/developerguide/msk-get-bootstrap-brokers.html) name here, which can be found from the AWS console.
 
 ### Bootstrap format for Plaintext
-xxx.kafka.us-west-2.amazonaws.com:9092
+xxx.kafka.us-west-2.amazonaws.com:9092 - when adding this variable **exclude** the trailing port number 
 
 ## Run task in your MSK VPC and public subnet.
 
