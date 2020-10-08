@@ -95,3 +95,6 @@ xxx.kafka.us-west-2.amazonaws.com:9092 - when adding this variable **exclude** t
 ## Run task in your MSK VPC and public subnet.
 
 * Once the container is launched using AWS Fargate, you will see messages appear in the consumer window terminal window. This consumer session was created from Cloud9 intance to the MSK Client in your VPC.
+* Adjust the security groups for you container to allow access to MSK
+![11](https://github.com/AsTheSeaRises/kafka_python/blob/master/images/9.png  "Step 11")
+
